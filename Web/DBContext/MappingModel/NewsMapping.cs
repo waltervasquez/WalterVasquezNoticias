@@ -15,8 +15,8 @@ namespace DBContext.MappingModel
             base.HasKey<int>((News m) => m.IdNew);
             base.Property<int>((News m) => m.IdNew).IsRequired();
             base.Property((News m) => m.Title).IsRequired().HasMaxLength(new int?(100));
-            base.Property((News m) => m.Content).IsRequired().HasMaxLength(new int?(300));
-            base.Property((News m) => m.Image).IsRequired().HasMaxLength(new int?(100));
+            base.Property((News m) => m.Content).IsRequired().HasMaxLength(new int?(400));
+            base.Property((News m) => m.Image).IsRequired().HasMaxLength(new int?(300));
             base.Property((News m) => m.DatePublication).IsRequired();
 
             base.ToTable("News");

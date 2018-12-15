@@ -110,6 +110,10 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\JSNews\Constant\constant.js" />
+    <Content Include="Scripts\JSNews\Controller\ControllerNews.js" />
+    <Content Include="Scripts\JSNews\Controller\functionController.js" />
+    <Content Include="Scripts\JSNews\Factory\factoryLoadInitial.js" />
     <Content Include="Scripts\JSNews\Index.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />

@@ -57,6 +57,14 @@
     <Compile Include="Migrations\201812141454325_primeraetapaconfiguracionseed.Designer.cs">
       <DependentUpon>201812141454325_primeraetapaconfiguracionseed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812150310499_actualizacionnoticias.cs" />
+    <Compile Include="Migrations\201812150310499_actualizacionnoticias.Designer.cs">
+      <DependentUpon>201812150310499_actualizacionnoticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812150336133_actualizacionnoticias1.cs" />
+    <Compile Include="Migrations\201812150336133_actualizacionnoticias1.Designer.cs">
+      <DependentUpon>201812150336133_actualizacionnoticias1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +81,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812141454325_primeraetapaconfiguracionseed.resx">
       <DependentUpon>201812141454325_primeraetapaconfiguracionseed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812150310499_actualizacionnoticias.resx">
+      <DependentUpon>201812150310499_actualizacionnoticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812150336133_actualizacionnoticias1.resx">
+      <DependentUpon>201812150336133_actualizacionnoticias1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

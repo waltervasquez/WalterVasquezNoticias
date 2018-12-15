@@ -3,10 +3,31 @@
     ViewBag.Title = "Index";
 }
 
-<div ng-app="app" ng-controller="ControllerNews">
-    {{dataNews}}
+<div ng-app="app" ng-controller="ControllerNews as vm">
+   
+    <div class="well" ng-repeat="new in vm.dataNews" style="margin-top:1em;">
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="{{new.Image}}"  style="height: 140px;width: 180px;">
+            </a>
+            <div class="media-body" >
+                <h4 class="media-heading">{{new.Title}}</h4>
+                <p style="margin-top:2em;">
+                   {{new.Content}}
+                </p>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> {{ new.DatePublication | date :  "dd.MM.y" }} </span></li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
  
 @section scripts {  
-     <script src="~/Scripts/JSNews/Index.js"></script>
+ 
+    <script src="~/Scripts/JSNews/Index.js"></script>     
+    <script src="~/Scripts/JSNews/Constant/constant.js"></script>    
+    <script src="~/Scripts/JSNews/Factory/factoryLoadInitial.js"></script>
+    <script src="~/Scripts/JSNews/Controller/functionController.js"></script>
+    <script src="~/Scripts/JSNews/Controller/ControllerNews.js"></script>   
 }

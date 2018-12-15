@@ -33,7 +33,7 @@ namespace Repository
 
         public List<News> ListNews()
         {
-            List<News> List = context.News.ToList();
+            List<News> List = context.News.ToList().OrderBy(p => Guid.NewGuid()).ToList().Take(3).ToList();
             return List;
         }
 
